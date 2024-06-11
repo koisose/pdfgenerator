@@ -1,5 +1,6 @@
+# Start of Selection
 # Use the official Node.js image as the base image
-FROM node:16
+FROM node:18.17.0
 
 # Set the working directory
 WORKDIR /app
@@ -24,3 +25,4 @@ EXPOSE 3000
 
 # Start the Next.js application
 CMD ["npm", "start"]
+# End of Selection
