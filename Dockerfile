@@ -15,7 +15,9 @@ RUN npm install
 COPY . .
 
 # Install Firefox for Playwright
-RUN npx playwright install
+RUN npx playwright install-deps 
+RUN npx playwright install chromium
+
 
 # Build the Next.js application
 RUN npm run build
